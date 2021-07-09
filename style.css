@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(white 5%, transparent, white 95%), url('./img/emile-perron-xrVDYZRGdw4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header img {
+    margin-top: 45px;
+    margin-left: 200px;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 60px;
+    margin-left: 100px;
+}
+
+h1:hover{
+    letter-spacing: 20px;
+    color:yellow;
+    padding-bottom: 20px;
+}
+
+.yellow-line {
+    border-top: solid 7px rgb(255, 255, 3);
+    margin-left: 100px;
+    width: 200px;
+}
+
+.text {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.scale {
+    animation-name: scale;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: linear;
+    /* animation-fill-mode: backwards; */
+
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.textIn {
+    animation: textIn 1s ease-in-out backwards;
+    animation-delay: 1s;
+}
+
+@keyframes textIn {
+    0% {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
